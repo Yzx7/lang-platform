@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Material HSK con derechos de autor: solo local, nunca al repositorio
+/HSK/

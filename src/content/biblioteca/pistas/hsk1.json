@@ -1,0 +1,653 @@
+[
+ {
+  "pista": "1-1",
+  "pagina": 16,
+  "x": 0.5149,
+  "y": 0.5444,
+  "fuente": "icono"
+ },
+ {
+  "pista": "1-2",
+  "pagina": 16,
+  "x": 0.3247,
+  "y": 0.7689,
+  "fuente": "icono"
+ },
+ {
+  "pista": "1-3",
+  "pagina": 17,
+  "x": 0.4468,
+  "y": 0.2116,
+  "fuente": "icono"
+ },
+ {
+  "pista": "1-4",
+  "pagina": 17,
+  "x": 0.5608,
+  "y": 0.5553,
+  "fuente": "icono"
+ },
+ {
+  "pista": "1-5",
+  "pagina": 18,
+  "x": 0.514,
+  "y": 0.2104,
+  "fuente": "icono"
+ },
+ {
+  "pista": "1-6",
+  "pagina": 18,
+  "x": 0.6354,
+  "y": 0.5234,
+  "fuente": "icono"
+ },
+ {
+  "pista": "1-7",
+  "pagina": 19,
+  "x": 0.5575,
+  "y": 0.1147,
+  "fuente": "icono"
+ },
+ {
+  "pista": "2-1",
+  "pagina": 20,
+  "x": 0.5124,
+  "y": 0.607,
+  "fuente": "icono"
+ },
+ {
+  "pista": "2-2",
+  "pagina": 21,
+  "x": 0.2664,
+  "y": 0.4457,
+  "fuente": "icono"
+ },
+ {
+  "pista": "2-3",
+  "pagina": 22,
+  "x": 0.514,
+  "y": 0.2092,
+  "fuente": "icono"
+ },
+ {
+  "pista": "2-4",
+  "pagina": 22,
+  "x": 0.71,
+  "y": 0.5113,
+  "fuente": "icono"
+ },
+ {
+  "pista": "2-5",
+  "pagina": 23,
+  "x": 0.4525,
+  "y": 0.5456,
+  "fuente": "icono"
+ },
+ {
+  "pista": "2-6",
+  "pagina": 24,
+  "x": 0.3279,
+  "y": 0.0888,
+  "fuente": "icono"
+ },
+ {
+  "pista": "2-7",
+  "pagina": 24,
+  "x": 0.6272,
+  "y": 0.3921,
+  "fuente": "icono"
+ },
+ {
+  "pista": "3-1",
+  "pagina": 25,
+  "x": 0.4493,
+  "y": 0.5396,
+  "fuente": "icono"
+ },
+ {
+  "pista": "3-2",
+  "pagina": 26,
+  "x": 0.3247,
+  "y": 0.0894,
+  "fuente": "icono"
+ },
+ {
+  "pista": "3-3",
+  "pagina": 27,
+  "x": 0.4493,
+  "y": 0.4812,
+  "fuente": "icono"
+ },
+ {
+  "pista": "3-4",
+  "pagina": 28,
+  "x": 0.3263,
+  "y": 0.0906,
+  "fuente": "icono"
+ },
+ {
+  "pista": "3-5",
+  "pagina": 28,
+  "x": 0.5149,
+  "y": 0.6004,
+  "fuente": "icono"
+ },
+ {
+  "pista": "3-6",
+  "pagina": 29,
+  "x": 0.5854,
+  "y": 0.0948,
+  "fuente": "icono"
+ },
+ {
+  "pista": "3-7",
+  "pagina": 31,
+  "x": 0.5599,
+  "y": 0.4096,
+  "fuente": "icono"
+ },
+ {
+  "pista": "4-1",
+  "pagina": 34,
+  "x": 0.5116,
+  "y": 0.1857,
+  "fuente": "icono"
+ },
+ {
+  "pista": "4-2",
+  "pagina": 34,
+  "x": 0.6641,
+  "y": 0.4204,
+  "fuente": "icono"
+ },
+ {
+  "pista": "4-3",
+  "pagina": 36,
+  "x": 0.8559,
+  "y": 0.7533,
+  "fuente": "icono"
+ },
+ {
+  "pista": "4-4",
+  "pagina": 37,
+  "x": 0.264,
+  "y": 0.5113,
+  "fuente": "icono"
+ },
+ {
+  "pista": "4-5",
+  "pagina": 39,
+  "x": 0.801,
+  "y": 0.2134,
+  "fuente": "icono"
+ },
+ {
+  "pista": "4-6",
+  "pagina": 40,
+  "x": 0.7305,
+  "y": 0.0912,
+  "fuente": "icono"
+ },
+ {
+  "pista": "5-1",
+  "pagina": 43,
+  "x": 0.4509,
+  "y": 0.1887,
+  "fuente": "icono"
+ },
+ {
+  "pista": "5-2",
+  "pagina": 43,
+  "x": 0.6608,
+  "y": 0.4848,
+  "fuente": "icono"
+ },
+ {
+  "pista": "5-3",
+  "pagina": 45,
+  "x": 0.7993,
+  "y": 0.3289,
+  "fuente": "icono"
+ },
+ {
+  "pista": "5-4",
+  "pagina": 46,
+  "x": 0.6731,
+  "y": 0.0906,
+  "fuente": "icono"
+ },
+ {
+  "pista": "5-5",
+  "pagina": 46,
+  "x": 0.8584,
+  "y": 0.7713,
+  "fuente": "icono"
+ },
+ {
+  "pista": "5-6",
+  "pagina": 47,
+  "x": 0.2648,
+  "y": 0.6004,
+  "fuente": "icono"
+ },
+ {
+  "pista": "6-1",
+  "pagina": 51,
+  "x": 0.4583,
+  "y": 0.2122,
+  "fuente": "icono"
+ },
+ {
+  "pista": "6-2",
+  "pagina": 51,
+  "x": 0.669,
+  "y": 0.5986,
+  "fuente": "icono"
+ },
+ {
+  "pista": "6-3",
+  "pagina": 52,
+  "x": 0.8567,
+  "y": 0.2098,
+  "fuente": "icono"
+ },
+ {
+  "pista": "6-4",
+  "pagina": 53,
+  "x": 0.264,
+  "y": 0.0954,
+  "fuente": "icono"
+ },
+ {
+  "pista": "6-5",
+  "pagina": 53,
+  "x": 0.801,
+  "y": 0.7876,
+  "fuente": "icono"
+ },
+ {
+  "pista": "6-6",
+  "pagina": 55,
+  "x": 0.2697,
+  "y": 0.0948,
+  "fuente": "icono"
+ },
+ {
+  "pista": "7-1",
+  "pagina": 61,
+  "x": 0.4517,
+  "y": 0.1905,
+  "fuente": "icono"
+ },
+ {
+  "pista": "7-2",
+  "pagina": 61,
+  "x": 0.6018,
+  "y": 0.4216,
+  "fuente": "icono"
+ },
+ {
+  "pista": "7-3",
+  "pagina": 63,
+  "x": 0.7993,
+  "y": 0.4409,
+  "fuente": "icono"
+ },
+ {
+  "pista": "7-4",
+  "pagina": 64,
+  "x": 0.3206,
+  "y": 0.4541,
+  "fuente": "icono"
+ },
+ {
+  "pista": "7-5",
+  "pagina": 65,
+  "x": 0.7969,
+  "y": 0.7244,
+  "fuente": "icono"
+ },
+ {
+  "pista": "7-6",
+  "pagina": 66,
+  "x": 0.7042,
+  "y": 0.5005,
+  "fuente": "icono"
+ },
+ {
+  "pista": "8-1",
+  "pagina": 70,
+  "x": 0.5099,
+  "y": 0.2104,
+  "fuente": "icono"
+ },
+ {
+  "pista": "8-2",
+  "pagina": 70,
+  "x": 0.7034,
+  "y": 0.4614,
+  "fuente": "icono"
+ },
+ {
+  "pista": "8-3",
+  "pagina": 71,
+  "x": 0.8034,
+  "y": 0.5462,
+  "fuente": "icono"
+ },
+ {
+  "pista": "8-4",
+  "pagina": 72,
+  "x": 0.6739,
+  "y": 0.0912,
+  "fuente": "icono"
+ },
+ {
+  "pista": "8-5",
+  "pagina": 73,
+  "x": 0.8002,
+  "y": 0.4668,
+  "fuente": "icono"
+ },
+ {
+  "pista": "8-6",
+  "pagina": 74,
+  "x": 0.7206,
+  "y": 0.158,
+  "fuente": "icono"
+ },
+ {
+  "pista": "9-1",
+  "pagina": 77,
+  "x": 0.4575,
+  "y": 0.1899,
+  "fuente": "icono"
+ },
+ {
+  "pista": "9-2",
+  "pagina": 77,
+  "x": 0.6673,
+  "y": 0.6425,
+  "fuente": "icono"
+ },
+ {
+  "pista": "9-3",
+  "pagina": 78,
+  "x": 0.8551,
+  "y": 0.8454,
+  "fuente": "icono"
+ },
+ {
+  "pista": "9-4",
+  "pagina": 79,
+  "x": 0.6403,
+  "y": 0.5149,
+  "fuente": "icono"
+ },
+ {
+  "pista": "9-5",
+  "pagina": 80,
+  "x": 0.8584,
+  "y": 0.6949,
+  "fuente": "icono"
+ },
+ {
+  "pista": "9-6",
+  "pagina": 81,
+  "x": 0.7116,
+  "y": 0.2284,
+  "fuente": "icono"
+ },
+ {
+  "pista": "10-1",
+  "pagina": 86,
+  "x": 0.5091,
+  "y": 0.1869,
+  "fuente": "icono"
+ },
+ {
+  "pista": "10-2",
+  "pagina": 86,
+  "x": 0.3189,
+  "y": 0.6443,
+  "fuente": "icono"
+ },
+ {
+  "pista": "10-3",
+  "pagina": 87,
+  "x": 0.801,
+  "y": 0.7148,
+  "fuente": "icono"
+ },
+ {
+  "pista": "10-4",
+  "pagina": 88,
+  "x": 0.3148,
+  "y": 0.6227,
+  "fuente": "icono"
+ },
+ {
+  "pista": "10-5",
+  "pagina": 89,
+  "x": 0.8051,
+  "y": 0.5191,
+  "fuente": "icono"
+ },
+ {
+  "pista": "10-6",
+  "pagina": 90,
+  "x": 0.651,
+  "y": 0.3289,
+  "fuente": "icono"
+ },
+ {
+  "pista": "11-1",
+  "pagina": 94,
+  "x": 0.5083,
+  "y": 0.2092,
+  "fuente": "icono"
+ },
+ {
+  "pista": "11-2",
+  "pagina": 94,
+  "x": 0.7133,
+  "y": 0.6215,
+  "fuente": "icono"
+ },
+ {
+  "pista": "11-3",
+  "pagina": 95,
+  "x": 0.8034,
+  "y": 0.7725,
+  "fuente": "icono"
+ },
+ {
+  "pista": "11-4",
+  "pagina": 96,
+  "x": 0.3222,
+  "y": 0.4716,
+  "fuente": "icono"
+ },
+ {
+  "pista": "11-5",
+  "pagina": 97,
+  "x": 0.8034,
+  "y": 0.7455,
+  "fuente": "icono"
+ },
+ {
+  "pista": "11-6",
+  "pagina": 98,
+  "x": 0.6862,
+  "y": 0.3229,
+  "fuente": "icono"
+ },
+ {
+  "pista": "12-1",
+  "pagina": 102,
+  "x": 0.8559,
+  "y": 0.2092,
+  "fuente": "icono"
+ },
+ {
+  "pista": "12-2",
+  "pagina": 103,
+  "x": 0.264,
+  "y": 0.0948,
+  "fuente": "icono"
+ },
+ {
+  "pista": "12-3",
+  "pagina": 104,
+  "x": 0.8534,
+  "y": 0.2068,
+  "fuente": "icono"
+ },
+ {
+  "pista": "12-4",
+  "pagina": 104,
+  "x": 0.3189,
+  "y": 0.7539,
+  "fuente": "icono"
+ },
+ {
+  "pista": "12-5",
+  "pagina": 105,
+  "x": 0.7993,
+  "y": 0.781,
+  "fuente": "icono"
+ },
+ {
+  "pista": "12-6",
+  "pagina": 106,
+  "x": 0.7321,
+  "y": 0.4993,
+  "fuente": "icono"
+ },
+ {
+  "pista": "13-1",
+  "pagina": 111,
+  "x": 0.8002,
+  "y": 0.2122,
+  "fuente": "icono"
+ },
+ {
+  "pista": "13-2",
+  "pagina": 112,
+  "x": 0.3288,
+  "y": 0.0918,
+  "fuente": "icono"
+ },
+ {
+  "pista": "13-3",
+  "pagina": 113,
+  "x": 0.8002,
+  "y": 0.1881,
+  "fuente": "icono"
+ },
+ {
+  "pista": "13-4",
+  "pagina": 114,
+  "x": 0.3222,
+  "y": 0.0906,
+  "fuente": "icono"
+ },
+ {
+  "pista": "13-5",
+  "pagina": 114,
+  "x": 0.8575,
+  "y": 0.8418,
+  "fuente": "icono"
+ },
+ {
+  "pista": "13-6",
+  "pagina": 115,
+  "x": 0.6239,
+  "y": 0.3638,
+  "fuente": "icono"
+ },
+ {
+  "pista": "14-1",
+  "pagina": 119,
+  "x": 0.8018,
+  "y": 0.2116,
+  "fuente": "icono"
+ },
+ {
+  "pista": "14-2",
+  "pagina": 120,
+  "x": 0.323,
+  "y": 0.0906,
+  "fuente": "icono"
+ },
+ {
+  "pista": "14-3",
+  "pagina": 121,
+  "x": 0.7969,
+  "y": 0.5685,
+  "fuente": "icono"
+ },
+ {
+  "pista": "14-4",
+  "pagina": 122,
+  "x": 0.7124,
+  "y": 0.0918,
+  "fuente": "icono"
+ },
+ {
+  "pista": "14-5",
+  "pagina": 123,
+  "x": 0.7961,
+  "y": 0.5444,
+  "fuente": "icono"
+ },
+ {
+  "pista": "14-6",
+  "pagina": 124,
+  "x": 0.3247,
+  "y": 0.6498,
+  "fuente": "icono"
+ },
+ {
+  "pista": "15-1",
+  "pagina": 128,
+  "x": 0.8551,
+  "y": 0.208,
+  "fuente": "icono"
+ },
+ {
+  "pista": "15-2",
+  "pagina": 128,
+  "x": 0.7272,
+  "y": 0.5896,
+  "fuente": "icono"
+ },
+ {
+  "pista": "15-3",
+  "pagina": 129,
+  "x": 0.801,
+  "y": 0.7701,
+  "fuente": "icono"
+ },
+ {
+  "pista": "15-4",
+  "pagina": 130,
+  "x": 0.3214,
+  "y": 0.4945,
+  "fuente": "icono"
+ },
+ {
+  "pista": "15-5",
+  "pagina": 131,
+  "x": 0.7985,
+  "y": 0.208,
+  "fuente": "icono"
+ },
+ {
+  "pista": "15-6",
+  "pagina": 132,
+  "x": 0.7026,
+  "y": 0.0918,
+  "fuente": "icono"
+ }
+]

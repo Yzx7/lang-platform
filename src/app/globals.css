@@ -1,26 +1,129 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+  --bg: #faf7f2;
+  --surface: #ffffff;
+  --ink: #1f1b17;
+  --muted: #6f675e;
+  --line: #e8e0d4;
+  --accent: #b42318;
+  --accent-soft: #fbeae7;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Colores de tono (convención de Pleco): 1 rojo, 2 verde, 3 azul, 4 morado, neutro gris. */
+  --t1: #d92d20;
+  --t2: #15803d;
+  --t3: #1d4ed8;
+  --t4: #7e22ce;
+  --t0: #78716c;
+
+  /* Roles de la fórmula gramatical. */
+  --r-sujeto: #dbeafe;
+  --r-tiempo: #fef3c7;
+  --r-lugar: #dcfce7;
+  --r-verbo: #fee2e2;
+  --r-objeto: #ede9fe;
+  --r-particula: #fce7f3;
+  --r-conector: #e0f2fe;
+  --r-modificador: #e2e8f0;
+  --r-adverbio: #ffedd5;
+  --r-complemento: #ccfbf1;
+
+  /* Piezas de la gramática de inglés (mismos colores que los apuntes de 2020):
+     sujeto naranja, verbo verde, to be amarillo, have rosa, will violeta, negación roja. */
+  --m-be: #b45309;
+  --m-have: #be185d;
+  --m-will: #7c3aed;
+  --m-suj: #ea580c;
+  --m-verbo: #16a34a;
+  --m-modal: #1d4ed8;
+  --m-neg: #dc2626;
+  --m-fin: #166534;
+  --m-fin-bg: #dcfce7;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --bg: #151311;
+    --surface: #1e1b18;
+    --ink: #f0ebe4;
+    --muted: #a59d93;
+    --line: #34302b;
+    --accent: #f97066;
+    --accent-soft: #3a1d1a;
+
+    --t1: #f87171;
+    --t2: #4ade80;
+    --t3: #60a5fa;
+    --t4: #c084fc;
+    --t0: #a8a29e;
+
+    /* Roles de la fórmula gramatical. */
+    --r-sujeto: #1e3a5f;
+    --r-tiempo: #4a3a12;
+    --r-lugar: #173d27;
+    --r-verbo: #4c1d1d;
+    --r-objeto: #33285a;
+    --r-particula: #4a1d3a;
+    --r-conector: #12384d;
+    --r-modificador: #2b3441;
+    --r-adverbio: #4a2c12;
+    --r-complemento: #134e48;
+
+    /* Inglés, modo oscuro. */
+    --m-be: #facc15;
+    --m-have: #f472b6;
+    --m-will: #a78bfa;
+    --m-suj: #fb923c;
+    --m-verbo: #22c55e;
+    --m-modal: #60a5fa;
+    --m-neg: #f87171;
+    --m-fin: #86efac;
+    --m-fin-bg: #14532d;
   }
 }
 
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --font-sans: var(--font-geist-sans), system-ui, sans-serif;
+  --font-hanzi: "PingFang SC", "Microsoft YaHei", "Noto Sans SC", "Source Han Sans SC", sans-serif;
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+}
+
+.hanzi {
+  font-family: var(--font-hanzi);
+}
+
+.t1 { color: var(--t1); }
+.t2 { color: var(--t2); }
+.t3 { color: var(--t3); }
+.t4 { color: var(--t4); }
+.t0 { color: var(--t0); }
+
+/* Modo estudio: ocultar pinyin o significados; al pasar el cursor (o tocar) se revelan. */
+.py,
+.es {
+  transition: opacity 120ms ease;
+}
+html[data-ocultar-pinyin] .py {
+  opacity: 0;
+}
+html[data-ocultar-es] .es {
+  opacity: 0;
+}
+/* La ventanita de <Texto> se abre a pedido: siempre muestra el pinyin y el significado. */
+html[data-ocultar-pinyin] .glosa .py,
+html[data-ocultar-es] .glosa .es,
+html[data-ocultar-pinyin] .revela:hover .py,
+html[data-ocultar-es] .revela:hover .es {
+  opacity: 1;
 }
