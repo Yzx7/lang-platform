@@ -9,13 +9,13 @@ export function generateStaticParams() {
   return libros.map((l) => ({ libro: l.slug }));
 }
 
-export async function generateMetadata(props: PageProps<"/biblioteca/[libro]">): Promise<Metadata> {
+export async function generateMetadata(props: PageProps<"/chino/biblioteca/[libro]">): Promise<Metadata> {
   const { libro: slug } = await props.params;
   const libro = libroPorSlug(slug);
   return libro ? { title: tituloDe(libro) } : {};
 }
 
-export default function Pagina({ params }: PageProps<"/biblioteca/[libro]">) {
+export default function Pagina({ params }: PageProps<"/chino/biblioteca/[libro]">) {
   return (
     <Suspense>
       <LibroHsk params={params} />
@@ -23,7 +23,7 @@ export default function Pagina({ params }: PageProps<"/biblioteca/[libro]">) {
   );
 }
 
-async function LibroHsk({ params }: Pick<PageProps<"/biblioteca/[libro]">, "params">) {
+async function LibroHsk({ params }: Pick<PageProps<"/chino/biblioteca/[libro]">, "params">) {
   const { libro: slug } = await params;
   const libro = libroPorSlug(slug);
   if (!libro) notFound();
@@ -31,7 +31,7 @@ async function LibroHsk({ params }: Pick<PageProps<"/biblioteca/[libro]">, "para
   return (
     // data-ancho-completo hace que el layout suelte el ancho máximo: el visor usa toda la pantalla.
     <div data-ancho-completo className="space-y-4">
-      <Link href="/biblioteca" className="text-sm text-muted hover:text-accent">
+      <Link href="/chino/biblioteca" className="text-sm text-muted hover:text-accent">
         ← Biblioteca
       </Link>
       <h1 className="text-2xl font-bold">{tituloDe(libro)}</h1>

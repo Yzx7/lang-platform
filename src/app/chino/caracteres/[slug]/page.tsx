@@ -11,13 +11,13 @@ export function generateStaticParams() {
   return familias.map((f) => ({ slug: f.slug }));
 }
 
-export async function generateMetadata(props: PageProps<"/caracteres/[slug]">): Promise<Metadata> {
+export async function generateMetadata(props: PageProps<"/chino/caracteres/[slug]">): Promise<Metadata> {
   const { slug } = await props.params;
   const familia = familiaPorSlug(slug);
   return familia ? { title: `Familia ${familia.raiz.h} (${familia.raiz.m})`, description: familia.resumen } : {};
 }
 
-export default function Pagina({ params }: PageProps<"/caracteres/[slug]">) {
+export default function Pagina({ params }: PageProps<"/chino/caracteres/[slug]">) {
   return (
     <Suspense>
       <FamiliaCaracter params={params} />
@@ -25,7 +25,7 @@ export default function Pagina({ params }: PageProps<"/caracteres/[slug]">) {
   );
 }
 
-async function FamiliaCaracter({ params }: Pick<PageProps<"/caracteres/[slug]">, "params">) {
+async function FamiliaCaracter({ params }: Pick<PageProps<"/chino/caracteres/[slug]">, "params">) {
   const { slug } = await params;
   const familia = familiaPorSlug(slug);
   if (!familia) notFound();
@@ -33,7 +33,7 @@ async function FamiliaCaracter({ params }: Pick<PageProps<"/caracteres/[slug]">,
   return (
     <article className="space-y-10">
       <header className="space-y-4">
-        <Link href="/caracteres" className="text-sm text-muted hover:text-accent">
+        <Link href="/chino/caracteres" className="text-sm text-muted hover:text-accent">
           ← Caracteres
         </Link>
         <div className="flex flex-wrap items-center gap-6">

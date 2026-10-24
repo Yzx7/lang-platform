@@ -3,7 +3,7 @@ import type { ReactNode } from "react";
 import { significado, type Hanzi } from "@/content/hanzi";
 import { tonoDe } from "@/lib/pinyin";
 
-export const rutaHanzi = (h: string) => `/caracteres/hanzi/${h}`;
+export const rutaHanzi = (h: string) => `/chino/caracteres/hanzi/${h}`;
 
 /** Un carácter que enlaza a su página: pinyin, hanzi y significado. */
 export function TarjetaHanzi({ e, nota }: { e: Hanzi; nota?: ReactNode }) {

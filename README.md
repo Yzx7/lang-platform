@@ -1,6 +1,8 @@
-# Chino con lógica (prototipo)
+# Idiomas con lógica (prototipo)
 
-Plataforma para aprender chino mandarín en español con dos ideas centrales:
+Plataforma para aprender idiomas en español. Cada curso tiene su ruta: `/chino` e `/ingles`.
+
+El curso de chino mandarín se apoya en dos ideas centrales:
 
 1. **Vocabulario carácter por carácter.** Cada palabra se desarma en sus caracteres
    (电 electricidad + 脑 cerebro = computadora) y los caracteres se agrupan en familias.
@@ -28,7 +30,7 @@ pnpm dev
     vive en `secciones/<slug>.ts`, con sus temas escritos y los pendientes (`pendiente()`).
     `vocab.ts` tiene las palabras que se repiten. `index.ts` arma el mapa y falla al
     compilar si un tema enlaza a otro que no existe o que todavía no está escrito.
-    Rutas: `/gramatica/<seccion>/<tema>`.
+    Rutas: `/chino/gramatica/<seccion>/<tema>`.
 - `src/components/`: `Caracter`, `PalabraDesglosada`, `OracionVista`, `Formula` y
   `ControlesEstudio` (ocultar pinyin o significados para ponerse a prueba).
 - `docs/estudio-videos.md`: notas de estudio de las que salió el contenido inicial.
@@ -43,12 +45,12 @@ pieza (`{be:am}`, `{have:has}`, `{will:will}`, `{do:does}`, `{modal:can}`, `{neg
 
 ## Biblioteca HSK (solo local)
 
-`/biblioteca` muestra los libros del HSK Standard Course (nueva edición) con un botón ▶
+`/chino/biblioteca` muestra los libros del HSK Standard Course (nueva edición) con un botón ▶
 sobre cada ícono de audio y una capa para escribir encima con tableta (se guarda en
 IndexedDB, por página).
 
 - Los PDF y audios tienen derechos de autor: van en `HSK/` (ignorada por git) y los sirve
-  `app/biblioteca/archivo/[...ruta]/route.ts`, con soporte de `Range` para cargar por partes.
+  `app/chino/biblioteca/archivo/[...ruta]/route.ts`, con soporte de `Range` para cargar por partes.
   Los audios se extraen de los zip a `HSK/audio/hsk<n>/<lección>-<pista>.mp3`.
 - `scripts/detectar-pistas.py` (PyMuPDF + OpenCV) ubica cada pista en su página, por la
   etiqueta del texto o por el ícono del parlante, y escribe `src/content/biblioteca/pistas/`.

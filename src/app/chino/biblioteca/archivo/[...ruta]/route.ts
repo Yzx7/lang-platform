@@ -8,7 +8,7 @@ import { Readable } from "node:stream";
 const RAIZ = path.join(process.cwd(), "HSK");
 const TIPOS: Record<string, string> = { ".pdf": "application/pdf", ".mp3": "audio/mpeg" };
 
-export async function GET(request: Request, ctx: RouteContext<"/biblioteca/archivo/[...ruta]">) {
+export async function GET(request: Request, ctx: RouteContext<"/chino/biblioteca/archivo/[...ruta]">) {
   const { ruta } = await ctx.params;
   const archivo = path.resolve(RAIZ, ...ruta);
   const tipo = TIPOS[path.extname(archivo).toLowerCase()];

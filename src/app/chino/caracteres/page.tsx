@@ -22,7 +22,7 @@ export default function Caracteres() {
         {familias.map((f) => (
           <Link
             key={f.slug}
-            href={`/caracteres/${f.slug}`}
+            href={`/chino/caracteres/${f.slug}`}
             className="flex gap-5 rounded-xl border border-line bg-surface p-5 transition-colors hover:border-accent"
           >
             <Caracter c={f.raiz} tamaño="lg" sinEnlace />

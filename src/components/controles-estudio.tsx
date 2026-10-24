@@ -63,10 +63,10 @@ function Boton({ opcion, etiqueta }: { opcion: Opcion; etiqueta: string }) {
  * Modo estudio: oculta el pinyin o los significados en todo el sitio para
  * ponerte a prueba. Al pasar el cursor (o tocar) sobre un elemento, se revela.
  */
-export function ControlesEstudio() {
+export function ControlesEstudio({ pronunciacion }: { pronunciacion: string }) {
   return (
     <div className="flex items-center gap-2">
-      <Boton opcion="ocultar-pinyin" etiqueta="Ocultar pinyin" />
+      <Boton opcion="ocultar-pinyin" etiqueta={`Ocultar ${pronunciacion}`} />
       <Boton opcion="ocultar-es" etiqueta="Ocultar significados" />
     </div>
   );

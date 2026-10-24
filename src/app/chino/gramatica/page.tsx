@@ -9,27 +9,27 @@ const cincoIdeas = [
   {
     titulo: "El verbo nunca cambia",
     texto: "No hay conjugaciones. El «cuándo» lo dicen palabras como 昨天 (ayer) o 明天 (mañana).",
-    href: "/gramatica/tiempo-y-aspecto/el-verbo-no-cambia",
+    href: "/chino/gramatica/tiempo-y-aspecto/el-verbo-no-cambia",
   },
   {
     titulo: "El orden manda",
     texto: "Quién, cuándo, dónde y recién la acción: el tiempo y el lugar van antes del verbo.",
-    href: "/gramatica/estructura/orden-de-la-oracion",
+    href: "/chino/gramatica/estructura/orden-de-la-oracion",
   },
   {
     titulo: "Piezas alrededor del verbo",
     texto: "在 (en curso), 了 (completado), 过 (experiencia), 不/没 (negación), 吗 (pregunta): cada una en su lugar fijo.",
-    href: "/gramatica/tiempo-y-aspecto/todas-las-formas",
+    href: "/chino/gramatica/tiempo-y-aspecto/todas-las-formas",
   },
   {
     titulo: "Para contar, un clasificador",
     texto: "Entre el número y la cosa va una palabra que dice su forma: 一本书, 三杯咖啡.",
-    href: "/gramatica/numeros-y-clasificadores/clasificadores",
+    href: "/chino/gramatica/numeros-y-clasificadores/clasificadores",
   },
   {
     titulo: "Las palabras se arman con caracteres",
     texto: "Cada carácter tiene significado: 电 (electricidad) + 脑 (cerebro) = computadora.",
-    href: "/compuestos",
+    href: "/chino/compuestos",
   },
 ];
 
@@ -72,7 +72,7 @@ export default function Gramatica() {
       <div className="grid gap-4 md:grid-cols-2">
         {secciones.map((seccion, i) => (
           <section key={seccion.slug} className="space-y-3 rounded-xl border border-line bg-surface p-5">
-            <Link href={`/gramatica/${seccion.slug}`} className="group block space-y-1">
+            <Link href={`/chino/gramatica/${seccion.slug}`} className="group block space-y-1">
               <div className="flex items-baseline gap-3">
                 <span className="text-sm font-medium text-muted">{i + 1}</span>
                 <h2 className="text-xl font-semibold group-hover:text-accent">{seccion.titulo}</h2>
@@ -88,7 +88,7 @@ export default function Gramatica() {
                   </li>
                 ) : (
                   <li key={t.slug}>
-                    <Link href={`/gramatica/${seccion.slug}/${t.slug}`} className="hover:text-accent hover:underline">
+                    <Link href={`/chino/gramatica/${seccion.slug}/${t.slug}`} className="hover:text-accent hover:underline">
                       <span className="text-accent">●</span> {t.titulo}
                     </Link>
                   </li>

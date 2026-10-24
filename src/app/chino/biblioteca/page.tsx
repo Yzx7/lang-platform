@@ -33,7 +33,7 @@ export default function Biblioteca() {
                 return (
                   <Link
                     key={l.slug}
-                    href={`/biblioteca/${l.slug}`}
+                    href={`/chino/biblioteca/${l.slug}`}
                     className="space-y-1 rounded-xl border border-line bg-surface p-4 transition-colors hover:border-accent"
                   >
                     <p className="text-2xl">{ICONO[l.tipo]}</p>

@@ -9,13 +9,13 @@ export function generateStaticParams() {
   return secciones.map((s) => ({ seccion: s.slug }));
 }
 
-export async function generateMetadata(props: PageProps<"/gramatica/[seccion]">): Promise<Metadata> {
+export async function generateMetadata(props: PageProps<"/chino/gramatica/[seccion]">): Promise<Metadata> {
   const { seccion: slug } = await props.params;
   const seccion = seccionPorSlug(slug);
   return seccion ? { title: seccion.titulo, description: seccion.resumen } : {};
 }
 
-export default function Pagina({ params }: PageProps<"/gramatica/[seccion]">) {
+export default function Pagina({ params }: PageProps<"/chino/gramatica/[seccion]">) {
   return (
     <Suspense>
       <SeccionGramatica params={params} />
@@ -23,7 +23,7 @@ export default function Pagina({ params }: PageProps<"/gramatica/[seccion]">) {
   );
 }
 
-async function SeccionGramatica({ params }: Pick<PageProps<"/gramatica/[seccion]">, "params">) {
+async function SeccionGramatica({ params }: Pick<PageProps<"/chino/gramatica/[seccion]">, "params">) {
   const { seccion: slug } = await params;
   const seccion = seccionPorSlug(slug);
   if (!seccion) notFound();
@@ -35,7 +35,7 @@ async function SeccionGramatica({ params }: Pick<PageProps<"/gramatica/[seccion]
   return (
     <article className="space-y-10">
       <header className="space-y-3">
-        <Link href="/gramatica" className="text-sm text-muted hover:text-accent">
+        <Link href="/chino/gramatica" className="text-sm text-muted hover:text-accent">
           ← Gramática
         </Link>
         <h1 className="text-3xl font-bold">
@@ -69,7 +69,7 @@ async function SeccionGramatica({ params }: Pick<PageProps<"/gramatica/[seccion]
             ) : (
               <Link
                 key={t.slug}
-                href={`/gramatica/${seccion.slug}/${t.slug}`}
+                href={`/chino/gramatica/${seccion.slug}/${t.slug}`}
                 className="space-y-2 rounded-xl border border-line bg-surface p-5 transition-colors hover:border-accent"
               >
                 <span className="text-xs font-medium text-accent">{t.nivel}</span>
@@ -84,14 +84,14 @@ async function SeccionGramatica({ params }: Pick<PageProps<"/gramatica/[seccion]
 
       <nav className="flex flex-wrap justify-between gap-3 border-t border-line pt-6 text-sm">
         {anterior ? (
-          <Link href={`/gramatica/${anterior.slug}`} className="hover:text-accent">
+          <Link href={`/chino/gramatica/${anterior.slug}`} className="hover:text-accent">
             ← {anterior.titulo}
           </Link>
         ) : (
           <span />
         )}
         {siguiente && (
-          <Link href={`/gramatica/${siguiente.slug}`} className="hover:text-accent">
+          <Link href={`/chino/gramatica/${siguiente.slug}`} className="hover:text-accent">
             {siguiente.titulo} →
           </Link>
         )}

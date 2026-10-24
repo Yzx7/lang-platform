@@ -11,13 +11,13 @@ export function generateStaticParams() {
   return escritos.map(({ seccion, punto }) => ({ seccion: seccion.slug, tema: punto.slug }));
 }
 
-export async function generateMetadata(props: PageProps<"/gramatica/[seccion]/[tema]">): Promise<Metadata> {
+export async function generateMetadata(props: PageProps<"/chino/gramatica/[seccion]/[tema]">): Promise<Metadata> {
   const { seccion, tema } = await props.params;
   const punto = puntoPorRuta(seccion, tema);
   return punto ? { title: punto.titulo, description: punto.resumen } : {};
 }
 
-export default function Pagina({ params }: PageProps<"/gramatica/[seccion]/[tema]">) {
+export default function Pagina({ params }: PageProps<"/chino/gramatica/[seccion]/[tema]">) {
   return (
     <Suspense>
       <PuntoGramatical params={params} />
@@ -25,7 +25,7 @@ export default function Pagina({ params }: PageProps<"/gramatica/[seccion]/[tema
   );
 }
 
-async function PuntoGramatical({ params }: Pick<PageProps<"/gramatica/[seccion]/[tema]">, "params">) {
+async function PuntoGramatical({ params }: Pick<PageProps<"/chino/gramatica/[seccion]/[tema]">, "params">) {
   const { seccion: slugSeccion, tema } = await params;
   const seccion = seccionPorSlug(slugSeccion);
   const punto = puntoPorRuta(slugSeccion, tema);
@@ -39,11 +39,11 @@ async function PuntoGramatical({ params }: Pick<PageProps<"/gramatica/[seccion]/
     <article className="space-y-10">
       <header className="space-y-3">
         <nav className="flex flex-wrap gap-2 text-sm text-muted">
-          <Link href="/gramatica" className="hover:text-accent">
+          <Link href="/chino/gramatica" className="hover:text-accent">
             Gramática
           </Link>
           <span>/</span>
-          <Link href={`/gramatica/${seccion.slug}`} className="hover:text-accent">
+          <Link href={`/chino/gramatica/${seccion.slug}`} className="hover:text-accent">
             {seccion.titulo}
           </Link>
         </nav>
@@ -170,14 +170,14 @@ async function PuntoGramatical({ params }: Pick<PageProps<"/gramatica/[seccion]/
 
       <nav className="flex flex-wrap justify-between gap-3 border-t border-line pt-6 text-sm">
         {anterior ? (
-          <Link href={`/gramatica/${anterior.seccion.slug}/${anterior.punto.slug}`} className="hover:text-accent">
+          <Link href={`/chino/gramatica/${anterior.seccion.slug}/${anterior.punto.slug}`} className="hover:text-accent">
             ← {anterior.punto.titulo}
           </Link>
         ) : (
           <span />
         )}
         {siguiente && (
-          <Link href={`/gramatica/${siguiente.seccion.slug}/${siguiente.punto.slug}`} className="hover:text-accent">
+          <Link href={`/chino/gramatica/${siguiente.seccion.slug}/${siguiente.punto.slug}`} className="hover:text-accent">
             {siguiente.punto.titulo} →
           </Link>
         )}

@@ -35,7 +35,7 @@ export function Caracter({
       <span className={`py ${t.py} t${tonoDe(c.p)} font-medium`}>{c.p}</span>
       {familia ? (
         <Link
-          href={`/caracteres/${familia.slug}`}
+          href={`/chino/caracteres/${familia.slug}`}
           className="inline-block rounded leading-none underline decoration-dotted decoration-2 underline-offset-8 hover:bg-accent-soft"
           title={`Ver la familia de ${c.h}`}
         >

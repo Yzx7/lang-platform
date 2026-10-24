@@ -50,7 +50,7 @@ export function tituloDe(libro: Libro): string {
   return `${libro.nivel}${parte ? ` (${parte.toUpperCase()})` : ""} · ${libro.tipo}`;
 }
 
-/** URL local de un archivo de /HSK (ver app/biblioteca/archivo). */
+/** URL local de un archivo de /HSK (ver app/chino/biblioteca/archivo). */
 export function urlArchivo(ruta: string): string {
-  return `/biblioteca/archivo/${ruta}`;
+  return `/chino/biblioteca/archivo/${ruta}`;
 }

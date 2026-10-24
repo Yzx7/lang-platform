@@ -58,7 +58,7 @@ export const escritos = secciones.flatMap((seccion) =>
 export function relacionado(ruta: string) {
   const [seccion, tema] = ruta.split("/");
   const punto = puntoPorRuta(seccion, tema);
-  return punto && { href: `/gramatica/${ruta}`, titulo: punto.titulo };
+  return punto && { href: `/chino/gramatica/${ruta}`, titulo: punto.titulo };
 }
 
 // Igual que w(), un enlace roto entre temas rompe el build en vez de llegar a la página.

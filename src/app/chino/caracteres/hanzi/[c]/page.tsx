@@ -28,12 +28,12 @@ export function generateStaticParams() {
 // Según cómo llegue la URL, el carácter puede venir codificado (%E6%99%B4).
 const leer = (c: string) => hanziDe(decodeURIComponent(c));
 
-export async function generateMetadata(props: PageProps<"/caracteres/hanzi/[c]">): Promise<Metadata> {
+export async function generateMetadata(props: PageProps<"/chino/caracteres/hanzi/[c]">): Promise<Metadata> {
   const e = leer((await props.params).c);
   return e ? { title: `${e.h} (${e.py.join(", ")})`, description: `De qué está hecho ${e.h} y qué caracteres se le parecen.` } : {};
 }
 
-export default function Pagina({ params }: PageProps<"/caracteres/hanzi/[c]">) {
+export default function Pagina({ params }: PageProps<"/chino/caracteres/hanzi/[c]">) {
   return (
     <Suspense>
       <PaginaHanzi params={params} />
@@ -41,7 +41,7 @@ export default function Pagina({ params }: PageProps<"/caracteres/hanzi/[c]">) {
   );
 }
 
-async function PaginaHanzi({ params }: Pick<PageProps<"/caracteres/hanzi/[c]">, "params">) {
+async function PaginaHanzi({ params }: Pick<PageProps<"/chino/caracteres/hanzi/[c]">, "params">) {
   const e = leer((await params).c);
   if (!e) notFound();
 
@@ -71,7 +71,7 @@ async function PaginaHanzi({ params }: Pick<PageProps<"/caracteres/hanzi/[c]">, 
   return (
     <article className="space-y-10">
       <header className="space-y-4">
-        <Link href="/caracteres" className="text-sm text-muted hover:text-accent">
+        <Link href="/chino/caracteres" className="text-sm text-muted hover:text-accent">
           ← Caracteres
         </Link>
         <div className="flex flex-wrap items-center gap-6">
@@ -204,7 +204,7 @@ async function PaginaHanzi({ params }: Pick<PageProps<"/caracteres/hanzi/[c]">, 
             </ul>
           )}
           {familia && (
-            <Link href={`/caracteres/${familia.slug}`} className="inline-block text-sm text-accent hover:underline">
+            <Link href={`/chino/caracteres/${familia.slug}`} className="inline-block text-sm text-accent hover:underline">
               Ver la familia completa de <span className="hanzi">{e.h}</span> →
             </Link>
           )}
